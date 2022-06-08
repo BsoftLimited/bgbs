@@ -43,6 +43,13 @@
 				color: #dc0000;
 				padding: 10px;
 			}
+
+			.center-cropped {
+				object-fit: none; /* Do not scale the image */
+				object-position: center; /* Center the image within the element */
+				height: 120px;
+				width: 100px;
+			}
 			
 			@media (min-width: 768px) {
 				.bd-placeholder-img-lg { font-size: 3.5rem; }
@@ -86,7 +93,7 @@
 			<section class="text-light" style="padding-top:100px; padding-bottom:40px; background-image:url('images/banner.jpg'); width: 100%;" id="home">
 				<div class="jumbotron text-center">
 					<h1 class="text-light" style="font-weight:900;font-size:2.4em;">Bubble Goose Ballers</h1>
-					<p class="text-light">Run your school activities more smoothly and effectively</p>
+					<label style="font-size:18px; font: weight 15px;" class="text-light">@Tristian#6113</label>
 				</div>
 			</section>
 			
@@ -96,7 +103,7 @@
 						<source src="videos/background.mp4" type="video/mp4" />
 					</video>
 					<div class="caption">
-						<div class="container-fluid" style="magin-top:80px;">
+						<div class="container-fluid" style="margin-top:80px;">
 							<div class="row">
 								<div class="col-lg-6">
 									<h1 class="text-light" style="font-weight:700; margin-top:50px;">Bubble Goose Ballers</h1>
@@ -115,173 +122,94 @@
 				</div>
 			</section>
 			
-			<section id="home">
-				<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-indicators">
-						<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-						<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-						<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-						<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-					</div>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-								<img class="img" src="images/carol_1.jpg" style="height:100%; width:100%; opacity: 0.3;" />
-								<div class="container">
-									<div class="carousel-caption text-start">
-										<h1>Carl Jones</h1>
-										<p class="text-light" style="font-size:16px; font-weight:500;">
-											Carl Jones is a writer, producer, and voice actor. He played Thugnificent
-											and The Booty Warrior in The Boondocks. He also produced 35 episodes 
-											and co-executive produced 15 episodes of the TV series. 
-										</p>
-										<p class="text-light" style="font-size:16px; font-weight:500;">
-											When I was growing up, the Bubblegoose coat was a symbol of success in my neighborhood. 
-											All the ballers had them. So I used to draw this funny-looking goose in a bubblegoose
-											 coat that was balling out of control. And he stayed ballin’ in my sketchbooks for years,
-											 with the hopes that one day I could share this goofy bird with the world. The stories 
-											 are honest and edgy like The Boondocks and Black Dynamite, but way crazier and more cartoony!
-										</p>
-									</div>
-								</div>
-								
-						</div>
-						<div class="carousel-item">
-							<img src="images/carol_2.jpg" style="height:100%; width:100%; opacity: 0.3;" />
-							<div class="container">
-								<div class="carousel-caption">
-									<h1>Our Mission</h1>
-									<p class="text-light" style="font-size:16px; font-weight:500; text-align:left;">
-										Our mission is to build a new kind of multimedia company, that the Bubblegoose Baller community 
-										can participate in creatively. With the community’s help, we aim to supply the world 
-										with fun NFTS and creative cartoons, using our wealth of experience, years of production knowledge,
-										 and industry resources. We’re a small collective of progressive minds, with innovative ideas and talent, 
-										 that intend to lead a shifting paradigm towards a world where top tier creators can take their art 
-										 to market free from traditional restrictions. Together we can create a new model for creatives, 
-										 and build the next generations Disney or Pixar.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<img src="images/carol_3.jpg" style="height:100%; opacity: 0.3; width:100%;" />
-							<div class="container">
-								<div class="carousel-caption text-end">
-									<h1>Meet the Bubble Goose Ballers</h1>
-									<p  style="font-size:16px; font-weight:500; text-align:left;">When I was growing up, the Bubblegoose coat was a symbol of success in my neighborhood. All the ballers had them.
-									 So I used to draw this funny-looking goose in a bubblegoose coat that was balling out of control.
-									And he stayed ballin’ in my sketchbooks for years, with the hopes that one day I could share this goofy bird 
-									with the world. The stories are honest and edgy like The Boondocks and Black Dynamite, but way crazier
-									and more cartoony!</p>
-								</div>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<img src="images/carol_4.jpg" style="height:100%; opacity: 0.3; width:100%;" />
-							<div class="container">
-								<div class="carousel-caption">
-									<h1>Under that Bubble Goose</h1>
-									<p  style="font-size:16px; font-weight:500; text-align:left;">
-									The Bubblegoose Ballers collection is here to inspire us to fly high, live our lives to the fullest and to express ourselves 
-									freely. To be a Bubblegoose Baller is to be someone that takes risk, bets on themselves and overcomes odds. A dream chaser,
-									 who knows how to make something out of nothing. Someone who’s ambitious and courageous to a fault. It’s these birds’
-									  imaginations, not their wings that determine how high they can fly.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<button class="carousel-control-prev carousel-control-left" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-						<label class="fa fa-angle-left fa-3x"></label>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next carousel-control-right" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-						<label class="fa fa-angle-right fa-3x"></label>
-						<span class="visually-hidden">Next</span>
-					</button>
-				</div>
-			</section>
-			
 			<section>
-				<div class="container-fluid">
-					<div class="row pt-2">
-						<div class="col-lg-6">
-							<div class="card p-3" style="margin-top:10px;">
-								<video controls style="width:100%;">
-									<source src="videos/about.mp4" type="video/mp4" />
-								</video>
-								<div class="row d-flex justify-content-center">
-									<div class="card" style="background-color:#0000;">
-										<div class="card-body">
-											<div class="d-flex flex-start align-items-center">
-												<img class="rounded-circle shadow-1-strong me-2 border border-primary" src="images/profile.png" alt="avatar" width="45" height="45" />
-												<div>
-													<label style="font-size:14px;" class="fw-bold text-primary mb-1">Lily Coleman</label>
-													<p class="text-muted small mb-0">Shared publicly - Jan 2022</p>
+					<div class="row">
+						<div class="col-lg-12">
+							<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-indicators">
+									<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+									<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+									<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+									<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+								</div>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+											<img class="img" src="images/carol_1.jpg" style="height:100%; width: 100%; opacity: 0.3;" />
+											<div class="container">
+												<div class="carousel-caption text-start">
+													<h1>Carl Jones</h1>
+													<p class="text-light" style="font-size:16px; font-weight:500;">
+														Carl Jones is a writer, producer, and voice actor. He played Thugnificent
+														and The Booty Warrior in The Boondocks. He also produced 35 episodes 
+														and co-executive produced 15 episodes of the TV series. 
+													</p>
+													<p class="text-light" style="font-size:16px; font-weight:500;">
+														When I was growing up, the Bubblegoose coat was a symbol of success in my neighborhood. 
+														All the ballers had them. So I used to draw this funny-looking goose in a bubblegoose
+														 coat that was balling out of control. And he stayed ballin’ in my sketchbooks for years,
+														 with the hopes that one day I could share this goofy bird with the world. The stories 
+														 are honest and edgy like The Boondocks and Black Dynamite, but way crazier and more cartoony!
+													</p>
 												</div>
 											</div>
-											<p class="mt-2 mb-2za pb-1">wow, nice piece of software, I which it ran faster doe.</p>
-											<div class="small d-flex justify-content-start">
-												<a href="#!" class="d-flex align-items-center me-3"><i class="far fa-thumbs-up me-2"></i><p class="mb-0">Like</p></a>
-												<a href="#!" class="d-flex align-items-center me-3"><i class="far fa-comment-dots me-2"></i><p class="mb-0">Comment</p></a>
-												<a href="#!" class="d-flex align-items-center me-3"><i class="fas fa-share me-2"></i><p class="mb-0">Share</p></a>
+											
+									</div>
+									<div class="carousel-item">
+										<img src="images/carol_2.jpg" style="height:100%; width: 100%; opacity: 0.3;" />
+										<div class="container">
+											<div class="carousel-caption">
+												<h1>Our Mission</h1>
+												<p class="text-light" style="font-size:16px; font-weight:500; text-align:left;">
+													Our mission is to build a new kind of multimedia company, that the Bubblegoose Baller community 
+													can participate in creatively. With the community’s help, we aim to supply the world 
+													with fun NFTS and creative cartoons, using our wealth of experience, years of production knowledge,
+													 and industry resources. We’re a small collective of progressive minds, with innovative ideas and talent, 
+													 that intend to lead a shifting paradigm towards a world where top tier creators can take their art 
+													 to market free from traditional restrictions. Together we can create a new model for creatives, 
+													 and build the next generations Disney or Pixar.
+												</p>
 											</div>
 										</div>
-										<div class="py-1 border-0">
-											<div class="d-flex flex-start w-100">
-												<img class="rounded-circle shadow-1-strong me-3 border border-primary" src="images/profile.png" alt="avatar" width="40" height="40"/>
-												<div class="w-100">
-													<textarea class="form-control" id="textAreaExample" rows="2"></textarea>
-													<label class="text-muted small mb-0">leave a comment</label>
-												</div>
+									</div>
+									<div class="carousel-item">
+										<img src="images/carol_3.jpg" style="height:100%; width: 100%; opacity: 0.3;" />
+										<div class="container">
+											<div class="carousel-caption text-end">
+												<h1>Meet the Bubble Goose Ballers</h1>
+												<p  style="font-size:16px; font-weight:500; text-align:left;">When I was growing up, the Bubblegoose coat was a symbol of success in my neighborhood. All the ballers had them.
+												 So I used to draw this funny-looking goose in a bubblegoose coat that was balling out of control.
+												And he stayed ballin’ in my sketchbooks for years, with the hopes that one day I could share this goofy bird 
+												with the world. The stories are honest and edgy like The Boondocks and Black Dynamite, but way crazier
+												and more cartoony!</p>
 											</div>
-											<div class="float-end mt-2 pt-1">
-												<button type="button" class="btn btn-primary btn-sm">comment</button>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="images/carol_4.jpg" style="height:100%; width: 100%; opacity: 0.3;" />
+										<div class="container">
+											<div class="carousel-caption">
+												<h1>Under that Bubble Goose</h1>
+												<p  style="font-size:16px; font-weight:500; text-align:left;">
+												The Bubblegoose Ballers collection is here to inspire us to fly high, live our lives to the fullest and to express ourselves 
+												freely. To be a Bubblegoose Baller is to be someone that takes risk, bets on themselves and overcomes odds. A dream chaser,
+												 who knows how to make something out of nothing. Someone who’s ambitious and courageous to a fault. It’s these birds’
+												  imaginations, not their wings that determine how high they can fly.
+												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="card p-3" style="margin-top:10px;">
-								<video controls style="width:100%;">
-									<source src="videos/bubble_goose.mp4" type="video/mp4" />
-								</video>
-								<div class="row d-flex justify-content-center">
-									<div class="card" style="background-color:#0000;">
-										<div class="card-body">
-											<div class="d-flex flex-start align-items-center">
-												<img class="rounded-circle shadow-1-strong me-2 border border-primary" src="images/profile.png" alt="avatar" width="45" height="45" />
-												<div>
-													<label style="font-size:14px;" class="fw-bold text-primary mb-1">Lily Coleman</label>
-													<p class="text-muted small mb-0">Shared publicly - Jan 2022</p>
-												</div>
-											</div>
-											<p class="mt-2 mb-2za pb-1">wow, nice piece of software, I which it ran faster doe.</p>
-											<div class="small d-flex justify-content-start">
-												<a href="#!" class="d-flex align-items-center me-3"><i class="far fa-thumbs-up me-2"></i><p class="mb-0">Like</p></a>
-												<a href="#!" class="d-flex align-items-center me-3"><i class="far fa-comment-dots me-2"></i><p class="mb-0">Comment</p></a>
-												<a href="#!" class="d-flex align-items-center me-3"><i class="fas fa-share me-2"></i><p class="mb-0">Share</p></a>
-											</div>
-										</div>
-										<div class="py-1 border-0">
-											<div class="d-flex flex-start w-100">
-												<img class="rounded-circle shadow-1-strong me-3 border border-primary" src="images/profile.png" alt="avatar" width="40" height="40"/>
-												<div class="w-100">
-													<textarea class="form-control" id="textAreaExample" rows="2"></textarea>
-													<label class="text-muted small mb-0">leave a comment</label>
-												</div>
-											</div>
-											<div class="float-end mt-2 pt-1">
-												<button type="button" class="btn btn-primary btn-sm">comment</button>
-											</div>
-										</div>
-									</div>
-								</div>
+								<button class="carousel-control-prev carousel-control-left" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+									<label class="fa fa-angle-left fa-3x"></label>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next carousel-control-right" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+									<label class="fa fa-angle-right fa-3x"></label>
+									<span class="visually-hidden">Next</span>
+								</button>
 							</div>
 						</div>
 					</div>
-				</div>
 			</section>
 			
 			<section id="">
@@ -289,48 +217,118 @@
 					<h2 class="text-primary" style="font-weight: 650;">The Team</h2>
 					<div class="scroll-container">
 						<div class="scroll-element js-scroll fade-in-bottom row">
-							<div class="col-lg-3 p-1">
-								<div class="card p-2 border-light" style="background-color: rgba(0, 0, 0, 0);">
-									<img class="bd-placeholder-img card-img-top" width="100%" src="images/team-carl.png" />
-									<div class="card-body">
+							<div class="col-lg-6 p-1">
+								<div class="row p-2">
+									<div class="col-6 card-body text-center mb-3">
+										<img class="img-fluid rounded-circle" src="images/carl_jones.jpg" style="width:140px; height:140px;"/>
 										<h5 class="card-title">Carl Jones</h5>
 										<p class="card-text text-white">Carl Jones is best known for producing Adult Swim’s THE BOONDOCKS, 
 										BLACK DYNAMITE, FREAKNIK THE MUSICAL, LEGENDS OF CHAMBERLAIN HEIGHTS and THE JELLIES with
 										 Tyler The Creator.</p>
 									</div>
+									<div class="col-6 card-body"">
+										<img class="img-fluid" src="images/team-carl.png" />
+									</div>
 								</div>
 							</div>
-							<div class="col-lg-3 p-1">
-								<div class="card p-2 border-light" style="background-color: rgba(0, 0, 0, 0);">
-									<img class="bd-placeholder-img card-img-top" width="100%" src="images/team-love.png" />
-									<div class="card-body">
+							<div class="col-lg-6 p-1">
+								<div class="row p-2">
+									<div class="col-6 card-body text-center mb-3">
+										<img class="img-fluid rounded-circle" src="images/love_barneth.jpg" style="width:140px; height:140px;"/>
 										<h5 class="card-title">Love Barnett</h5>
 										<p class="card-text text-white">Co-founder of multimedia company MARTIAN BLUEBERRY, producing animated
 										 projects with Mega-stars like TRIPPIE REDD and MEG THEE STALLION.
 										 </p>
 									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 p-1">
-								<div class="card p-2 border-light" style="background-color: rgba(0, 0, 0, 0);">
-									<img class="bd-placeholder-img card-img-top" width="100%" src="images/team-moko.png" />
-									<div class="card-body">
-										<h5 class="card-title">Moko Ko</h5>
-										<p class="card-text text-white">Graphic artist and illustrator. The pen behind the Catalina Whale Mixer. Working alongside 
-										Carl to take his sketches to the finish line.</p>
+									<div class="col-6 card-body"">
+										<img class="img-fluid" src="images/team-love.png" />
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-3 p-1">
-								<div class="card p-2 border-light" style="background-color: rgba(0, 0, 0, 0);">
-									<img class="bd-placeholder-img card-img-top" width="100%" src="images/team-wagmi.png" />
-									<div class="card-body">
+							<div class="col-lg-6 p-1">
+								<div class="row p-2">
+									<div class="col-6 card-body text-center mb-3">
+										<img class="img-fluid rounded-circle" src="images/moko.jpg" style="width:140px; height:140px;"/>
+										<h5 class="card-title">Moko Ko</h5>
+										<p class="card-text text-white text-start">Graphic artist and illustrator. The pen behind the Catalina Whale Mixer. Working alongside 
+										Carl to take his sketches to the finish line.</p>
+									</div>
+									<div class="col-6 card-body"">
+										<img class="img-fluid" src="images/team-moko.png" />
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 p-1">
+								<div class="row p-2">
+									<div class="col-6 card-body text-center mb-3">
+										<img class="img-fluid rounded-circle" src="images/wagmi.jpg" style="width:140px; height:140px;"/>
 										<h5 class="card-title">WAGMI Beach</h5>
 										<p class="card-text text-white">WAGMI Beach is a Web3 native creative technology and entertainment studio developing rich,
 										 original IP on the Solana blockchain.</p>
 									</div>
+									<div class="col-6 card-body"">
+										<img class="img-fluid" src="images/team-wagmi.png" />
+									</div>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="container-fluid">
+					<div class="p-2">
+						<h3 class="text-light">Fan Art</h3>
+						<div class="row">
+							<div class="col-lg-6">
+								<img class="img-fluid" src="images/art 11.png" />
+							</div>
+							<div class="col-lg-6 row">
+								<div class="col-lg-6">
+									<img class="img-fluid" src="images/art 12.png" />
+								</div>
+								<div class="col-lg-6">
+									<img class="img-fluid" src="images/art 13.png" />
+								</div>
+								<div class="col-lg-6">
+									<img class="img-fluid" src="images/art 14.png" />
+								</div>
+								<div class="col-lg-6">
+									<img class="img-fluid" src="images/art 17.png" />
+								</div>
+							</div>
+						</div>
+						<div class="small d-flex justify-content-start text-light">
+							<a href="#!" class="d-flex align-items-center me-3"><i class="far fa-thumbs-up me-2"></i><p class="mb-0">Like</p></a>
+							<a href="#!" class="d-flex align-items-center me-3"><i class="far fa-comment-dots me-2"></i><p class="mb-0">Comment</p></a>
+							<a href="#!" class="d-flex align-items-center me-3"><i class="fas fa-share me-2"></i><p class="mb-0">Share</p></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section>
+				<div class="container-fluid">
+					<div class="p-2">
+						<h3 class="text-light">Fan Art by Tristian#6113</h3>
+						<div class="row">
+							<div class="col-lg-8">
+								<img class="img-fluid" src="images/tristian/1.jpg" />
+							</div>
+							<div class="col-lg-4">
+								<img class="img-fluid" src="images/tristian/2.jpg" style="width: 80%;" />
+								<img class="img-fluid p-2" src="images/tristian/3.jpg"  style="width: 40%; text-align: end;"/>
+							</div>
+							<div class="col-lg-6">
+								
+							</div>
+						</div>
+						<div class="small d-flex justify-content-start text-light">
+							<a href="#!" class="d-flex align-items-center me-3"><i class="far fa-thumbs-up me-2"></i><p class="mb-0">Like</p></a>
+							<a href="#!" class="d-flex align-items-center me-3"><i class="far fa-comment-dots me-2"></i><p class="mb-0">Comment</p></a>
+							<a href="#!" class="d-flex align-items-center me-3"><i class="fas fa-share me-2"></i><p class="mb-0">Share</p></a>
 						</div>
 					</div>
 				</div>
