@@ -78,8 +78,8 @@
 						<ul class="navbar-nav nav-pills me-auto mb-2 mb-md-0">
 							<li class="nav-item home active"><a href="#home" class="nav-link">Home</a></li>
 							<li class="nav-item about"><a class="nav-link text-blue" href="#about">About</a></li>
-							<li class="nav-item features"><a class="nav-link" href="#features">Team</a></li>
-							<li class="nav-item download"><a class="nav-link" href="#download">Fan Arts</a></li>
+							<li class="nav-item team"><a class="nav-link" href="#team">Team</a></li>
+							<li class="nav-item arts"><a class="nav-link" href="#arts">Fan Arts</a></li>
 							<li class="nav-item contacts"><a class="nav-link" href="#contacts">Contacts</a></li>
 						</ul>
 						<ul id = "options-default" class="navbar-nav navbar-end nav-pills align-right flex-clomn">
@@ -130,31 +130,9 @@
 									<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 									<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
 									<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-									<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 								</div>
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-											<img class="img" src="images/carol_1.jpg" style="height:100%; width: 100%; opacity: 0.3;" />
-											<div class="container">
-												<div class="carousel-caption text-start">
-													<h1>Carl Jones</h1>
-													<p class="text-light" style="font-size:16px; font-weight:500;">
-														Carl Jones is a writer, producer, and voice actor. He played Thugnificent
-														and The Booty Warrior in The Boondocks. He also produced 35 episodes 
-														and co-executive produced 15 episodes of the TV series. 
-													</p>
-													<p class="text-light" style="font-size:16px; font-weight:500;">
-														When I was growing up, the Bubblegoose coat was a symbol of success in my neighborhood. 
-														All the ballers had them. So I used to draw this funny-looking goose in a bubblegoose
-														 coat that was balling out of control. And he stayed ballin’ in my sketchbooks for years,
-														 with the hopes that one day I could share this goofy bird with the world. The stories 
-														 are honest and edgy like The Boondocks and Black Dynamite, but way crazier and more cartoony!
-													</p>
-												</div>
-											</div>
-											
-									</div>
-									<div class="carousel-item">
 										<img src="images/carol_2.jpg" style="height:100%; width: 100%; opacity: 0.3;" />
 										<div class="container">
 											<div class="carousel-caption">
@@ -211,8 +189,33 @@
 						</div>
 					</div>
 			</section>
+
+			<section>
+				<div class="container-fluid">
+					<div class="row" style="width: 100%;">
+						<div style="float: left; width: 50%;">
+							<h2 class="text-primary" style="font-weight: 650;">Carl Jones</h2>
+							<p class="text-light" style="font-size:16px; font-weight:500;">
+								Carl Jones is a writer, producer, and voice actor. He played Thugnificent
+								and The Booty Warrior in The Boondocks. He also produced 35 episodes 
+								and co-executive produced 15 episodes of the TV series. 
+							</p>
+							<p class="text-light" style="font-size:16px; font-weight:500;">
+								When I was growing up, the Bubblegoose coat was a symbol of success in my neighborhood. 
+								All the ballers had them. So I used to draw this funny-looking goose in a bubblegoose
+								 coat that was balling out of control. And he stayed ballin’ in my sketchbooks for years,
+								 with the hopes that one day I could share this goofy bird with the world. The stories 
+								 are honest and edgy like The Boondocks and Black Dynamite, but way crazier and more cartoony!
+							</p>
+						</div>
+						<video autoplay loop controls style="width: 50%; float: right;">
+							<source src="videos/about.mp4" type="video/mp4" />
+						</video>
+					</div>
+				</div>
+			</section>
 			
-			<section id="">
+			<section id="team">
 				<div class="container-fluid">
 					<h2 class="text-primary" style="font-weight: 650;">The Team</h2>
 					<div class="scroll-container">
@@ -276,7 +279,7 @@
 				</div>
 			</section>
 
-			<section>
+			<section id="arts">
 				<div class="container-fluid">
 					<div class="p-2">
 						<h3 class="text-light">Fan Art</h3>
@@ -346,15 +349,13 @@
 								<img class="img-fluid" src="images/colab/2.jpg" />
 							</div>
 							<div class="col-lg-4 p-2">
-								<img class="img-fluid" src="images/colab/3.jpg" />
-							</div>
-							<div class="col-lg-4 p-2">
 								<img class="img-fluid" src="images/colab/4.jpg" />
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<a href="#" class="py-2 px-3 border border-2 rounded-2 bg-primary text-light" style="position:fixed; bottom: 10px; right: 10px; z-index: 1000;"><i class="fa fa-arrow-up"></i></a>
 
 			<!--<section class="scroll-container">
 				<div class="scroll-element js-scroll slide-left"></div>
